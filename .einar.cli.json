@@ -1,0 +1,30 @@
+{
+    "project": "te-eme-backend",
+    "template": {
+        "tag": "4.3.0",
+        "url": "https://github.com/Ignaciojeria/einar-cli-template"
+    },
+    "installations": [
+        {
+            "name": "echo-server",
+            "libraries": [
+                "github.com/labstack/echo/v4",
+                "github.com/labstack/echo/v4/middleware",
+                "go.opentelemetry.io/contrib/instrumentation/github.com/labstack/echo/otelecho"
+            ]
+        },
+        {
+            "name": "firestore",
+            "libraries": [
+                "cloud.google.com/go/firestore",
+                "firebase.google.com/go"
+            ]
+        }
+    ],
+    "components": [
+        {
+            "kind": "post-controller",
+            "name": "post-user"
+        }
+    ]
+}
