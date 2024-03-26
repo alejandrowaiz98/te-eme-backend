@@ -24,7 +24,11 @@
     "components": [
         {
             "kind": "post-controller",
-            "name": "post-user"
+            "name": "login"
+        },
+        {
+            "kind": "firestore-repository",
+            "name": "login"
         }
     ]
 }
